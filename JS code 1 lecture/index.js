@@ -169,3 +169,129 @@ console.log("B",myArr2);
 const myn2 = myArr2.splice(1, 3)
 console.log("C",myArr2)
 console.log(myn2);*/
+const marvel_heroes = ["thor","iron man", "loki", "captain america"]
+const dc = ["bas man","flash","super man"]
+//marvel_heroes.push(dc)
+//console.log(marvel_heroes);
+ //const allHero = marvel_heroes.concat(dc)
+//console.log(allHero);
+//const all_New_Heros = [...marvel_heroes,...dc]
+//console.log(all_New_Heros);
+/*const New_another_array = [1,2,3, [2,3,5], 3,5,6,7, [3,23,43,21,[34,56,23,]]]
+const Real_another_array = New_another_array.flat(Infinity)
+console.log(Real_another_array);
+console.log(Array.isArray("sanjeet"));
+console.log(Array.from("sanjeet"))
+console.log(Array.from({name:"sanjeet"}))   //interesting
+let score1 = 100
+let score2 = 200
+let score3 = 300
+let score4 = 400
+console.log(Array.of(score1,score2,score3,score4));*/
+//OBJECT 
+const mysym = Symbol("key1")
+const jsuser ={
+name:"sanjeet",
+age:"19",
+[mysym]:"mykey1",
+location:"bihar",
+email:"sanjeet1504@gmail.com",
+"full name":"sanjeet kumar",
+
+
+}
+//console.log(jsuser["email"])
+//console.log(jsuser["mysym"]);
+//console.log(jsuser["full name"]);
+jsuser.email ="sanjeetkumar123@gmail.com"
+//console.log(jsuser["email"]);
+//Object.freeze(jsuser)
+jsuser.email ="bittusingh12345@gmail.com"
+//console.log(jsuser);
+
+
+jsuser.greeting = function() {
+    console.log("hello JS user")
+    
+}
+jsuser.greetingTwo = function() {
+    console.log(`hello JS user,${this.email}`);
+}
+//console.log(jsuser.greeting());
+//console.log(jsuser.greetingTwo());
+
+//const tinderUser = new Object()
+//console.log(tinderUser);
+const tinderUser ={}
+tinderUser.id ="123abc"
+tinderUser.name ="sanjeet kumar"
+tinderUser.logging ="false"
+//console.log(tinderUser);
+const regularUser ={
+    email:"kumar@113gamil.com",
+    fullname:{
+        userfullname:{
+            userfirstname:"sanjeet",
+            userlastname:"kumar"
+        }
+        
+
+    }
+}
+//console.log(regularUser);
+//console.log(regularUser.fullname.userfullname.userfirstname.userlastname)
+const obj1 ={1:"sanjeet",2:"nitesh"}
+const obj2 ={3:"bittu", 4:"sanju"}
+//const obj3 ={obj1, obj2}
+//const obj3= Object.assign(obj1,obj2)
+//const obj3 ={...obj1,... obj2}
+//console.log(obj3);
+const users = [
+    {
+        id:"1",
+        email:"h@123gmail.com"
+    },
+    {
+     id:"1",
+        email:"h@123gmail.com"
+},
+{
+ id:"1",
+        email:"h@123gmail.com"
+},
+{
+     id:"1",
+        email:"h@123gmail.com"
+},
+{
+     id:"1",
+        email:"h@123gmail.com"
+},
+]
+//console.log(tinderUser);
+//console.log(Object.keys(tinderUser));
+//console.log(Object.values(tinderUser));
+//console.log(Object.entries(tinderUser));
+//console.log(tinderUser.hasOwnproperty('id'));
+
+
+const course ={
+    coursename:"js in hindi",
+    courseprice:"999",
+    courseteacher:"hitesh"
+}
+//course.coursename
+const {courseteacher:teacher} = course
+//console.log(teacher);
+//JSON
+/*{
+    "name":"sanjeet",
+    "course":"js in hindi",
+    "price":"free"
+
+}*/
+
+
+
+
+
